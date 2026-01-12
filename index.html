@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クリエイター向け使い方ガイド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"M PLUS Rounded 1c"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                pink: '#FF8FAB',
+                light: '#FFC2D1',
+                bg: '#FFE5EC',
+                accent: '#FB6F92',
+                text: '#593D3D'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        background-color: #FFF0F5;
+        color: #593D3D;
+      }
+      /* Custom scrollbar for a cuter look */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFE5EC;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FF8FAB;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
